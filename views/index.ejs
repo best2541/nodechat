@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Chat App</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body>
+ <div class="container">
+   <div class="title">
+   </div>
+
+   <div class="card">
+    <div class="card-header">
+      Unknow
+    </div>
+    <div class="card-body">
+      <div class="input-group">
+        <input type="text" class="form-control" id="username">
+        <div class="input-group-append">
+          <button class="btn btn-warning" type="button" id="username">
+
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="message-box">
+      <ul class="list-group list-group-flush" id="message-lish">
+
+      </ul>
+    </div>
+    <div class="card-footer">
+      <div class="input-group">
+        <input type="text" class="form-control" id="message" placeholder="Send new message">
+        <div class="input-group-append">
+          <button class="btn btn-success" type="button" id="message">
+            Send
+          </button>
+        </div>
+      </div>
+    </div>
+   </div>
+ </div>
+ <script src="/javascripts/chatroom.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/3.0.3/socket.io.js"></script>
+</body>
+</html>
